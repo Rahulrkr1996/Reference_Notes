@@ -32,9 +32,9 @@
 						// gives https://github.com/Rahulrkr1996/testing.git the nickname of origin_master
 20.) Pushing files to GitHub(Adding files to GitHub website) :-
 		git push -u origin_master master		// Pushes the origin_master repo to github in the master branch 
-21.)
-22.)
-23.)	
+21.) Clonning a repo :- Making Desktop Working Copy
+22.) .gitignore file in a repo contains all the unimportant files which we dont need to see in Git GUI
+23.) Branches :- Copy of the Origin Project
 	
 	
 	
