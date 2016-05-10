@@ -1,0 +1,40 @@
+* Space void sensitive
+
+1.) > git --version
+	// Gets the version of git
+2.) > git config --global user.name "Rahulrkr1996"
+	> git config --list             // Gives list of all parameters
+3.) >git config user.name           //Gives the username
+4.) git help
+5.) git commit help 				// Opens help webpage 
+6.) git init						// Initializes empty git repo
+7.) > git add .						// Adds all files in the repo.						
+	> git add file.txt				// Adds file.txt to the repo
+8.) git commit -m "Message"	    	// Commits(Saves) the changes done to the files
+	// If any changes are made on any file, first we must add tht file and then commit changes made to it!!
+
+9.) git log							// Shows all the commits
+10.) git log --author="Rahulrkr1996"  // Shows all commits from Rahulrkr1996	
+11.) git status 					// Shows the files which r not commited	
+12.) git diff						// Shows all the differences that are in the repo and working copy	
+13.) git rm file_name				// Removes a file(Then commit the changes)	
+14.) git mv first.txt notes/second.txt	// Moves first.txt to notes folder and renames it to second.txt
+15.) git coommit -am "Commiting"		// Adds the files directly to repo(No need to do git add .) 
+		> Not useful when a file is deleted/remnamed/added
+		> Only for simple editing changes
+		> Adds all the files from working copy to repo
+16.) git checkout -- index.html		// Picks up index.html from Repo and replaces the working copy
+17.) git reset HEAD index.html 		// Removes index.html from staging area(If we did a git add .) to working copy
+18.) Going back to previous commits :-
+	git checkout 02453ye -- index.html		//Goes back to commit name 02453ye and brings the index.html from that to working copy
+19.) Integrating to GitHub :-
+		git remote add origin_master https://github.com/Rahulrkr1996/testing.git   			
+						// gives https://github.com/Rahulrkr1996/testing.git the nickname of origin_master
+20.) Pushing files to GitHub(Adding files to GitHub website) :-
+		git push -u origin_master			// Pushes the origin_master repo to github
+21.)
+22.)
+23.)	
+	
+	
+	

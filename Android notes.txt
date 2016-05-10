@@ -1,0 +1,33 @@
+1.) Delayiing an activity to open for 3 sec
+
+Handler mHandler = new Handler().postDelayed(new Runnable() {
+                      @Override
+                      public void run() {
+
+                          Intent i=new Intent(MainActivity.this,2ndActivity.class);
+                          startActivity(i);
+                      }
+                  }, 3000);
+
+
+
+
+
+>INTEGRATING GMAIL
+keytool -list -v -keystore "C:\Users\Rahul Kumar\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
+84:88:16:DD:92:11:46:52:2B:92:70:01:F5:EC:0C:3F:41:35:0B:72
+
+>INTEGRATING FACEBOOK
+keytool -exportcert -alias androiddebugkey -keystore %HOMEPATH%\.android\debug.keystore | C:\OpenSSL-Win64\bin\openssl sha1 -binary | C:\OpenSSL-Win64\bin\openssl base64
+
+2jmj715rSw0yVb/v1WAYkK/YBwk
+
+
+
+C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\
+
+ID - 544101767307-80g0or276ltq42rt2dmji9kfp8hqplcc.apps.googleusercontent.com
+
+
+
+

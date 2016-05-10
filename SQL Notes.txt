@@ -1,0 +1,67 @@
+*Commands :- 
+      i.)	> SHOW databases
+      ii.)	> CREATE DATABASE db
+      iii.)	> USE db
+      iv.) 	> GRANT PREVILEDGES ON db.object TO 'username@hostname' IDENTIFIED BY 'password';	
+                                 "                       "         db.*         "            "                "             "                    "                "
+      v.)	> CREATE TABLE class(Roll No. INT NOT NULL AUTO_INCREMENT PRIMARY KEY, name VARCHAR(20),age INT,Percentage INT);
+      vi.)	> INSERT INTO class(Roll No., name, age, Percenttage) VALUES (1,'Rahul','20','92'),(2,'RKR','21','90'); 
+	 * inserts two rows into table class.
+      vii.)	> SELECT * FROM class ;
+	*Displays all the rows of the table class
+      viii.)	> SELECT COUNT(*) FROM class;
+      ix.) 	> SELECT name,Percentage FROM class WHERE name="Rahul"; 		
+	*Conditional Display
+      x.)	>SELECT name,Percentage FROM class WHERE name LIKE "Ra%"; 
+	* Finds rows with same name Format
+      xi.)	>SELECT name,Percentage FROM class LIMIT 3;
+	* Top 3 records r displayed.
+	> SELECT * FROM class LIMIT 2 OFFSET 3;
+	* Displays 2 records starting from 4th record.
+	Or
+	> SELECT * FROM class LIMIT 2,3;
+      x.)	> SELECT * FROM class ORDER BY Percentage DESC; 
+	* Displays table class in order of Percentage in decending order.
+      xi.)	>INSERT INTO table2 SELECT * FROM table1	
+      xii.)	>SELECT COUNT(column_name) FROM table_name WHERE condition;
+      xiii.) 	>ALTER TABLE Person ADD COLUMN STATE_NAME VARCHAR(100);
+	 	
+	*Adding a column (NULL)
+      ix.)	>UPDATE Person,village
+SET Person.STATE_NAME = village.STATE_NAME
+WHERE Person.VILLAGE_ID = village.ID
+	*  Copying the column from another Table added previously
+      x.) 	Custom Columns :- 
+	> SELECT CONCAT(city,state) AS new_Column FROM Customers	
+      xi.) 	>SELECT name, UPPER(name) FROM student
+	*Makes UpperCase	
+      xii.)	AVG(),SQRT(),SUM(),MAX() same as above	
+      xiii.) 	SELECT id,COUNT(id) AS item_count FROM items GROUP BY id HAVING COUNT(id)>=3 ORDER BY item_count;
+	// Displays id and its coun of whole table grouped by id. 	
+      xiv.)    SELECT geographies_state.state_name,geographies_district.district_name 
+
+	FROM geographies_state 
+	
+LEFT OUTER JOIN geographies_district 
+ON geographies_district.state_id = geographies_state.id
+
+
+ 	
+* Data Types :- Refer pg 12
+* PRIMARY KEY :- 	Unique identification of a column of a table(Roll No., ID)
+* ATTRIBUTES :- NOT NULL, PRIMARY KEY, AUTO_INCREMENT {e.g. - Sl. No.} 
+* Renaming, andding column, changing data type of a column, removing a column, Deleting a table     refer Pg 15.
+* AND,OR,IN(),NOT IN(), LIKE'%',LIKE'_'
+
+
+
+
+
+
+
+
+
+
+
+
+
