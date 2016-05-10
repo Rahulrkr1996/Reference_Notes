@@ -35,6 +35,7 @@
 21.) Clonning a repo :- Making Desktop Working Copy
 22.) .gitignore file in a repo contains all the unimportant files which we dont need to see in Git GUI
 23.) Branches :- Copy of the Origin Project
-	
+24.) Pull request :- When we change the code in a branch and want to submit it to the origin_master we send a pull request
+25.) Merge Pull Request :- Add the changes done by the pull request. 	
 	
 	
