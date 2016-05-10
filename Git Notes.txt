@@ -31,7 +31,7 @@
 		git remote add origin_master https://github.com/Rahulrkr1996/testing.git   			
 						// gives https://github.com/Rahulrkr1996/testing.git the nickname of origin_master
 20.) Pushing files to GitHub(Adding files to GitHub website) :-
-		git push -u origin_master			// Pushes the origin_master repo to github
+		git push -u origin_master master		// Pushes the origin_master repo to github in the master branch 
 21.)
 22.)
 23.)	
